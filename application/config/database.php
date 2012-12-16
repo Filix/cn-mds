@@ -48,13 +48,13 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = '';
+$db['default']['hostname'] = '127.0.0.1';
+$db['default']['username'] = 'root';
 $db['default']['password'] = '';
-$db['default']['database'] = '';
+$db['default']['database'] = 'cn-mds';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
-$db['default']['pconnect'] = TRUE;
+$db['default']['pconnect'] = false;
 $db['default']['db_debug'] = TRUE;
 $db['default']['cache_on'] = FALSE;
 $db['default']['cachedir'] = '';
@@ -63,6 +63,23 @@ $db['default']['dbcollat'] = 'utf8_general_ci';
 $db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
+
+
+$db['prod']['hostname'] = '127.0.0.1';
+$db['prod']['username'] = 'root';
+$db['prod']['password'] = '';
+$db['prod']['database'] = 'cn-mds';
+$db['prod']['dbdriver'] = 'mysql';
+$db['prod']['dbprefix'] = '';
+$db['prod']['pconnect'] = false;
+$db['prod']['db_debug'] = TRUE;
+$db['prod']['cache_on'] = FALSE;
+$db['prod']['cachedir'] = '';
+$db['prod']['char_set'] = 'utf8';
+$db['prod']['dbcollat'] = 'utf8_general_ci';
+$db['prod']['swap_pre'] = '';
+$db['prod']['autoinit'] = TRUE;
+$db['prod']['stricton'] = FALSE;
 
 
 /* End of file database.php */
