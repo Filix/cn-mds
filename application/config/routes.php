@@ -40,6 +40,7 @@
 
 $route['default_controller'] = "homepage";
 $route['404_override'] = '';
+$route['category/(:num).html'] = "category/index/$1";
 
 
 /* End of file routes.php */

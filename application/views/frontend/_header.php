@@ -24,7 +24,7 @@
             <li class="line"></li>
             <?php foreach($menu as $v): ?>
             <li class="class1">
-                <a href="<?php echo base_url();?>category"  title="<?php echo $v['name']?>" class="class1<?php echo $focus == 'category_'.$v['id'] ? ' navdown' : '';?>">
+                <a href="<?php echo site_url('category/'.$v['id'].'.html');?>"  title="<?php echo $v['name']?>" class="class1<?php echo $focus == 'category_'.$v['id'] ? ' navdown' : '';?>">
                     <span><?php echo $v['name']?></span>
                 </a>
             </li>
@@ -56,7 +56,7 @@
                     <?php $image[] = $v['img'] ? base_url() . '/public/images/' . $v['img'] : '' ?>
                     <?php endforeach; ?>
                 <script type="text/javascript">
-                    var swf_width=887;
+                    var swf_width=990;
                     var swf_height=245;
                     var files='<?php echo implode($image, '|') ?>';
                     var links='<?php echo implode($link, '|') ?>';

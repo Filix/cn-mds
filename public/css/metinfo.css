@@ -4,7 +4,7 @@ a:hover{  color:#0099FF; }
 
 #metinfo{ 
     text-align:left; 
-	width:900px;
+	width:1003px;
 	margin:0px auto; 
 }
 
@@ -66,7 +66,7 @@ a:hover{  color:#0099FF; }
 /*----------------index-----------------------------------*/
 #main{ padding:10px 0px;}
 #main a:hover{ text-decoration:underline;}
-#main .left{ float:left; display:inline; width:200px; margin-right:8px; }
+#main .left{ float:left; display:inline; width:220px; margin-right:8px; }
 #main .left .content{ background:url(../images/leftbg.gif) repeat-y left top; padding-left:10px;}
 #main .left .bg{ background:url(../images/leftbg.gif) repeat-y 100% top; padding-right:10px}
 #main .left .topbg{ background:url(../images/lefttop.gif) no-repeat right top; height:12px; overflow:hidden; }
@@ -85,7 +85,7 @@ a:hover{  color:#0099FF; }
 #main .left .cont{ background:#F4F4F4; line-height:22px; padding:0px 8px;}
 
 
-#main .center{ float:left; display:inline; width:565px; margin-right:5px; }
+#main .center{ float:left; display:inline; width:540px; margin-right:5px; }
 #main .center h3.title{ height:20px; padding-top:10px; border-bottom:2px solid #a8a8a8;}
 #main .center h3.title span{ background:#a8a8a8; color:#FFF; padding:5px 8px 4px 8px; font-size:12px;}
 *+html #main .center h3.title{ height:19px;}
@@ -104,7 +104,7 @@ a:hover{  color:#0099FF; }
 #main .center .links_list ul li{ display:inline; padding-right:10px;}
 #main .center .links_list ul li a:hover{ text-decoration:underline;}
 
-#main .right{ float:left; display:inline; width:280px; margin-left:50px; }
+#main .right{ float:left; display:inline; width:220px; margin-left:5px; }
 #main .right .topbg{ height:7px; overflow:hidden; background:url(../images/rightbg.gif) no-repeat right top; padding-right:15px; }
 #main .right .topbg div{ height:7px; overflow:hidden; background:url(../images/rightbg.gif) no-repeat left top; }
 #main .right .bottombg{ height:7px; overflow:hidden; background:url(../images/rightbg.gif) no-repeat right -8px; padding-right:15px; }
