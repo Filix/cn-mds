@@ -9,8 +9,9 @@ a:hover{  color:#0099FF; }
 }
 
 /*---------------head-------------------------------------*/
+#head{ background: url(../images/logo.png) no-repeat;}
 #head .logo{ float:left;}
-#head .sidebar{ float:right; text-align:right; padding-right:10px;}
+#head .sidebar{ float:right; text-align:right; padding-right:10px; height: 100px;}
 #head .lang{ height:25px; line-height:25px;}
 #head .lang span{ padding:0px 8px; color:#333; }
 #head .lang span.time{ padding-right:30px; color:#0099FF;}

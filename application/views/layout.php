@@ -2,11 +2,11 @@
 <!-- saved from url=(0033)http://www.metinfo.cn/demo/metv2/ -->
 <html xmlns="http://www.w3.org/1999/xhtml"><head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>网站关键词-网站名称</title>
-    <meta name="description" content="网站描述，一般显示在搜索引擎搜索结果中的描述文字，用于介绍网站，吸引浏览者点击。">
-    <meta name="keywords" content="网站关键词">
-    <meta name="author" content="网站名称">
-    <meta name="copyright" content="Copyright 2008-2012 MetInfo">
+    <title>中国淀粉工业协会变性淀粉专业委员会</title>
+    <meta name="description" content="中国淀粉工业协会变性淀粉专业委员会">
+    <meta name="keywords" content="中国淀粉工业协会变性淀粉专业委员会">
+    <meta name="author" content="中国淀粉工业协会变性淀粉专业委员会">
+    <meta name="copyright" content="Copyright 2008-2013 中国淀粉工业协会变性淀粉专业委员会">
     <link href="" rel="shortcut icon">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>/public/css/metinfo.css">
     <script src="<?php echo base_url();?>/public/js/public.js" type="text/javascript" language="javascript"></script>

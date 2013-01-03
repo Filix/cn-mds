@@ -1,13 +1,11 @@
 <div id="head">
     <div class="logo">
-        <a href="http://www.metinfo.cn/demo/metv2/" title="图片关键词">
-            <img src="<?php echo base_url();?>/public/images/1347352632.png" alt="图片关键词" title="图片关键词" style="margin-top:5px; margin-left:5px;">
-        </a>
+
     </div>
     <div class="sidebar">
         <div class="lang">
             <span class="time">今天是 <?php echo date('Y-m-d'); ?></span>
-            <a href="#" onclick="SetHome(this,window.location);" style="cursor:pointer;" title="设为首页">设为首页</a><span>|</span>
+            <!--<a href="#" onclick="SetHome(this,window.location);" style="cursor:pointer;" title="设为首页">设为首页</a><span>|</span>-->
             <a href="#" onclick="addFavorite();" style="cursor:pointer;" title="收藏本站">收藏本站</a>
         </div>
         <h1><p></p></h1>
