@@ -14,14 +14,9 @@ class common extends CI_Controller {
         $this->load->model('article_model');
     }
 
-    public function index()
+    protected  function getNonMenuCategories()
     {
-        $data = array(
-            'header' => $this->load->view('frontend/_header', null, true),
-            'main' => $this->load->view('frontend/category_main', null, true),
-            'notice' => $this->load->view('frontend/_notice', null, true)
-        );
-        $this->setView($data);
+        return $this->category_model->getNonMenuCategories();
     }
 
     protected function getMenu(){

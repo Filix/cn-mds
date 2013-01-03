@@ -73,19 +73,19 @@
             <li class="class1"><a href="index.html" title="网站首页" class="class1 navdown" id="nav_10001"><span>网站首页</span></a></li>
             <li class="line"></li>
 
-            <li class="class1" onmouseover="onnav(this,'1');" onmouseout="outnav(this,'1');"><a href="list.html" 0="" title="行业动态" class="class1" id="nav_1"><span>行业动态</span></a>
+            <li class="class1"><a href="list.html" title="行业动态" class="class1" id="nav_1"><span>行业动态</span></a>
             </li>
 
             <li class="line"></li>
-            <li class="class1" onmouseover="onnav(this,&#39;2&#39;);" onmouseout="outnav(this,&#39;2&#39;);"><a href="list.html" title="行业知识" class="class1" id="nav_2"><span>行业知识</span></a>
+            <li class="class1"><a href="list.html" title="行业知识" class="class1" id="nav_2"><span>行业知识</span></a>
             </li>
 
             <li class="line"></li>
-            <li class="class1" onmouseover="onnav(this,&#39;3&#39;);" onmouseout="outnav(this,&#39;3&#39;);"><a href="company.html" title="厂家风采" class="class1" id="nav_3"><span>厂家风采</span></a>
+            <li class="class1"><a href="company.html" title="厂家风采" class="class1" id="nav_3"><span>厂家风采</span></a>
             </li>
 
             <li class="line"></li>
-            <li class="class1" onmouseover="onnav(this,&#39;32&#39;);" onmouseout="outnav(this,&#39;32&#39;);"><a href="products.html" title="设备展示" class="class1" id="nav_32"><span>设备展示</span></a>
+            <li class="class1"><a href="products.html" title="设备展示" class="class1" id="nav_32"><span>设备展示</span></a>
             </li>
 
             <li class="line"></li>

@@ -1,62 +1,49 @@
-<div id="web">
+<div id="web" xmlns="http://www.w3.org/1999/html">
     <div class="right">
-        <h3 class="title"><span>新闻资讯</span></h3>
+        <h3 class="title"><span><?php echo $category['name'] ?></span></h3>
         <div class="webcontent">
-            <script type="text/javascript">
-                $(window).load(function(){
-                    var simg = $('#web ul.news_list li span img');
-                    var cspan = $('#web ul.news_list li span');
-                    if(simg.length &gt; 0){
-                        cspan.addClass('ie6span');
-                    }
-                });
-            </script>
-            <ul class="news_list">
-                <li><span>2012-07-17</span><a target="_blank" href="news.html">新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻</a></li>
-                <li><span>2012-07-17</span><a target="_blank" href="news.html">新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻</a></li>
-                <li><span>2012-07-17</span><a target="_blank" href="news.html">新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻</a></li>
-                <li><span>2012-07-17</span><a target="_blank" href="news.html">新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻</a></li>
-                <li><span>2012-07-17</span><a target="_blank" href="news.html">新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻</a></li>
-                <li><span>2012-07-17</span><a target="_blank" href="news.html">新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻</a></li>
-                <li><span>2012-07-17</span><a target="_blank" href="news.html">新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻</a></li>
-                <li><span>2012-07-17</span><a target="_blank" href="news.html">新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻</a></li>
-                <li><span>2012-07-17</span><a target="_blank" href="news.html">新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻</a></li>
-                <li><span>2012-07-17</span><a target="_blank" href="news.html">新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻</a></li>
-                <li><span>2012-07-17</span><a target="_blank" href="news.html">新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻</a></li>
-                <li><span>2012-07-17</span><a target="_blank" href="news.html">新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻</a></li>
-                <li><span>2012-07-17</span><a target="_blank" href="news.html">新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻</a></li>
-                <li><span>2012-07-17</span><a target="_blank" href="news.html">新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻</a></li>
-            </ul>
+            <?php echo $list; ?>
         </div>
         <div class="web_bottom">
             <style>.digg4  { padding:3px; margin:3px; text-align:center; font-family:Tahoma, Arial, Helvetica, Sans-serif;  font-size: 12px;}.digg4  a { border:1px solid #ddd; padding:2px 5px 2px 5px; margin:2px; color:#aaa; text-decoration:none;}.digg4  a:hover { border:1px solid #a0a0a0; }.digg4  a:hover { border:1px solid #a0a0a0; }.digg4  span.current {border:1px solid #e0e0e0; padding:2px 5px 2px 5px; margin:2px; color:#aaa; background-color:#f0f0f0; text-decoration:none;}.digg4  span.disabled { border:1px solid #f3f3f3; padding:2px 5px 2px 5px; margin:2px; color:#ccc;} </style>
             <div class="digg4">
-                <span style="font-family: Tahoma, Verdana;" class="disabled"><b>«</b></span>
-                <span style="font-family: Tahoma, Verdana;" class="disabled">‹</span>
-                <span class="current">1</span>
-                <span style="font-family: Tahoma, Verdana;" class="disabled">›</span>
-                <span style="font-family: Tahoma, Verdana;" class="disabled"><b>»</b></span>
+                <?php if($pageinfo['page']>1): ?>
+                    <a href="<?php echo site_url('category/'.$category['id'].'.html');?>">«</a>
+                    <a href="<?php echo site_url('category/'.$category['id'].'-'.($pageinfo['page']-1).'.html');?>">‹</a>
+                <?php else: ?>
+                    <span style="font-family: Tahoma, Verdana;" class="disabled"><b>«</b></span>
+                    <span style="font-family: Tahoma, Verdana;" class="disabled">‹</span>
+                <?php endif; ?>
+                <span class="current"><?php echo $pageinfo['page'] ?></span>
+                <?php if($pageinfo['page'] < $pageinfo['totalpages']): ?>
+                    <a href="<?php echo site_url('category/'.$category['id'].'-'.($pageinfo['page']+1).'.html');?>">›</a>
+                    <a href="<?php echo site_url('category/'.$category['id'].'-'.$pageinfo['totalpages'].'.html');?>">»</a>
+                <?php else: ?>
+                    <span style="font-family: Tahoma, Verdana;" class="disabled"><b>›</b></span>
+                    <span style="font-family: Tahoma, Verdana;" class="disabled">»</span>
+                <?php endif; ?>
             </div>
         </div>
     </div>
 
     <div class="left">
-        <h3 class="title"><span>新闻资讯</span></h3>
+        <?php if(!empty($non_menu)): ?>
+        <h3 class="title"><span>资讯</span></h3>
         <div class="webnav">
             <ul>
-                <li class="li_class2"><a title="公司动态" href="list.html">热点新闻</a></li>
-                <li class="li_class2"><a title="业界资讯" href="list.html">网站通知</a></li>
-                <li class="li_class2"><a title="业界资讯" href="list.html">本站推荐</a></li>
-                <li class="li_class2"><a title="业界资讯" href="list.html">最新会议</a></li>
+                <?php foreach($non_menu as $v): ?>
+                <li class="li_class2"><a title="<?php echo $v['name'] ?>" href="<?php echo site_url('category/'.$v['id'].'.html');?>"><?php echo $v['name'] ?></a></li>
+                <?php endforeach; ?>
             </ul>
         </div>
+        <?php endif; ?>
         <h3 class="title"><span>联系方式</span></h3>
         <div class="text">
-            <div>某某有限公司</div>
-            <div>电 &nbsp;话：0000-888888</div>
-            <div>邮 &nbsp;编：000000</div>
-            <div>Email：admin@admin.cn</div>
-            <div>网 &nbsp;址：www.xxxxx.cn</div>
+            <div>联系人：洪雁</div>
+            <div>电 &nbsp;话：(86)0510-85329237</div>
+            <div>邮 &nbsp;编：214122</div>
+            <div>Email：yan_er74hong@yahoo.com.cn</div>
+            <div>地 &nbsp;址：江苏省无锡市蠡湖大道1800#江南大学食品学院</div>
         </div>
     </div>
     <div style="clear:both;"></div>

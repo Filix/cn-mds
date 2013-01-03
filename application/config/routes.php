@@ -38,9 +38,37 @@
 |
 */
 
+#frontend
 $route['default_controller'] = "homepage";
-$route['404_override'] = '';
+$route['article/(:num).html'] = "article/index/$1";
 $route['category/(:num).html'] = "category/index/$1";
+$route['category/(:num)-(:num).html'] = "category/index/$1/$2";
+$route['product.html'] = "category/index/4";
+$route['product-(:num).html'] = "category/index/4/$1";
+$route['company.html'] = "category/index/3";
+$route['company-(:num).html'] = "category/index/3/$1";
+
+
+#backend
+$route['backend'] = "backend/login";
+$route['backend/dashboard'] = "backend/login/dashboard";
+$route['backend/article/(:num)/edit'] = "backend/article/edit/$1";
+$route['backend/article/(:num)/delete'] = "backend/article/delete/$1";
+$route['backend/article/(:num)/create'] = "backend/article/create";
+
+$route['backend/link'] = "backend/article/link";
+$route['backend/link/create'] = "backend/article/createlink";
+
+$route['backend/slide'] = "backend/article/slide";
+$route['backend/slide/create'] = "backend/article/createslide";
+
+$route['backend/category/(:num)/edit'] = "backend/category/edit/$1";
+$route['backend/category/(:num)/delete'] = "backend/category/delete/$1";
+$route['backend/category/create'] = "backend/category/create";
+
+#default
+$route['404_override'] = '';
+
 
 
 /* End of file routes.php */

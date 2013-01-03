@@ -95,7 +95,7 @@ a:hover{  color:#0099FF; }
 #main .center .text{ padding:8px 8px 8px 0px; line-height:22px; }
 #main .center .text img{ margin:5px;}
 
-#main .center .advice{ width:550px; margin:10px auto; overflow:hidden; }
+#main .center .advice{ width:540px; margin:10px auto; overflow:hidden; }
 #main .center .indeximg{ padding:0px 5px;}
 #main .center .indeximg img{ border:1px solid #ccc; padding:1px;}
 #main .center .indeximg h2{ font-size:12px; font-weight:normal;}
@@ -167,9 +167,9 @@ a:hover{  color:#0099FF; }
 .web_bottom{ height:30px; line-height:30px; text-align:center; color:#666666;}
 
 /*--------------news-------------------------------------------------------------*/
-#web .right .news_list{ list-style:none;}
-#web .right .news_list li{ height:30px; line-height:30px; padding-left:20px; border-bottom:1px dashed #CCC; background:url(../images/cion08.gif) no-repeat 5px 10px; overflow:hidden; }
-#web .right .news_list li span{ float:right; padding-right:5px; color:#666;} 
+#web .right .news_list, ul.hot_news{ list-style:none;}
+#web .right .news_list li, ul.hot_news li{ height:30px; line-height:30px; padding-left:20px; border-bottom:1px dashed #CCC; background:url(../images/cion08.gif) no-repeat 5px 10px; overflow:hidden; }
+#web .right .news_list li span, ul.hot_news li span{ float:right; padding-right:5px; color:#666;} 
 * html #web .right .news_list li span.ie6span{ padding-top:8px;}
 
 h1.title{ font-size:16px; font-weight:bold; text-align:center; margin:8px 0px;}
